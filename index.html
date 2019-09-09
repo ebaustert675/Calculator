@@ -1,0 +1,33 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class = "calculator">
+    <input type="text" name="calc_display" id="calc__display">
+    <hr>
+    <div class = "buttons">
+      <button class="key--operator" onclick="dis('+')">+</button>
+      <button class="key--operator" onclick="dis('-')">-</button>
+      <button class="key--operator" onclick="dis('*')">*</button>
+      <button class="key--operator" onclick="dis('/')">÷</button>
+      <button onclick="dis('7')">7</button>
+      <button onclick="dis('8')">8</button>
+      <button onclick="dis('9')">9</button>
+      <button onclick="dis('4')">4</button>
+      <button onclick="dis('5')">5</button>
+      <button onclick="dis('6')">6</button>
+      <button onclick="dis('1')">1</button>
+      <button onclick="dis('2')">2</button>
+      <button onclick="dis('3')">3</button>
+      <button onclick="dis('0')">0</button>
+      <button onclick="dis('.')">.</button>
+      <button onclick="clr()">AC</button>
+      <button class="key--equal" onclick="solve()">=</button>
+    </div>
+    </div>
+  </body>
+</html>
