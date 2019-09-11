@@ -7,17 +7,29 @@
   </head>
   <body>
     <div class = "calculator">
+      <!--calculator display-->
     <input type="text" name="calc_display" id="calc__display">
     <hr>
+      <!--calculator buttons-->
     <div class = "buttons">
+      <!--key operators-->
+      <!--  delete-->
       <button class="key--operator" onclick="del()">del</button>
+      <!--  exponents-->
       <button class="key--operator" onclick="dis('^')">x<sup>y</sup></button>
-      <button class="key--operator" onclick="sqroot()">√x</button>
-      <button class="key--operator" onclick="percent()">%</button>
+      <!--  square root-->
+      <button class="key--operator" onclick="dis('√')">√x</button>
+      <!--  percent-->
+      <button class="key--operator" onclick="dis('%')">%</button>
+      <!--  add-->
       <button class="key--operator" onclick="dis('+')">+</button>
+      <!--  subtract-->
       <button class="key--operator" onclick="dis('-')">-</button>
+      <!--  multiply-->
       <button class="key--operator" onclick="dis('*')">*</button>
+      <!--  divide-->
       <button class="key--operator" onclick="dis('/')">÷</button>
+      <!--numbers-->
       <button onclick="dis('7')">7</button>
       <button onclick="dis('8')">8</button>
       <button onclick="dis('9')">9</button>
@@ -28,8 +40,11 @@
       <button onclick="dis('2')">2</button>
       <button onclick="dis('3')">3</button>
       <button onclick="dis('0')">0</button>
+      <!--decimal-->
       <button onclick="dis('.')">.</button>
+      <!--clear-->
       <button onclick="clr()">AC</button>
+      <!--equals-->
       <button class="key--equal" onclick="solve()">=</button>
     </div>
     </div>
