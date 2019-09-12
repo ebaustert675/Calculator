@@ -112,8 +112,9 @@ function clr()
 //function that evaluates the equation and displays the solution
 function solve()
 {
-  let y = eval(x)
+  let z = x.toString()
+  let y = eval(z)
   document.getElementById("calc__display").value = y
-  x = eval(x)
+  x = eval(z)
   console.log(x)
 }
