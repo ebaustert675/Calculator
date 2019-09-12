@@ -37,6 +37,15 @@ function dis(val)
              x = f
              console.log(x)
            }
+           //log10
+           else if (val == "log10")
+           {
+             let l = document.getElementById("calc__display").value
+             let t = Math.log10(l)
+             document.getElementById("calc__display").value = t
+             x = t
+             console.log(x)
+           }
            //parenthesis
            else if (val == '()')
            {
