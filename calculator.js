@@ -12,7 +12,7 @@ function dis(val)
              x = x + "**"
              console.log(x)
            }
-           //squroot
+           //squareroot
            else if (val == "√")
            {
              let c = sqroot()
@@ -65,6 +65,15 @@ function dis(val)
                console.log(x)
                y = true
              }
+           }
+           //pi
+           else if (val == 'π')
+           {
+             var pi = 3.14159
+             var pi2 = pi.toFixed(2)
+             document.getElementById("calc__display").value+=pi2
+             x = x + pi
+             console.log(x)
            }
            //displaying equation
            else
@@ -123,6 +132,7 @@ function solve()
 {
   let z = x.toString()
   let y = eval(z)
+  y = y.toFixed(4)
   document.getElementById("calc__display").value = y
   x = eval(z)
   console.log(x)
