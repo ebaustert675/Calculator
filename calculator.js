@@ -131,7 +131,8 @@ function clr()
 function solve()
 {
   let z = x.toString()
+  let y = eval(z)
+  document.getElementById("calc__display").value = y
   x = eval(z)
-  document.getElementById("calc__display").value = x
   console.log(x)
 }
